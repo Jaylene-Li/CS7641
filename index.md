@@ -4,6 +4,8 @@ layout: default
 
 This is Group 16 project for 2022 Fall, CS 7641.
 
+[TOC]
+
 ## Proposal
 
 
