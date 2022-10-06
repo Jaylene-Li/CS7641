@@ -1,15 +1,15 @@
-# Proposal
+## Proposal
 
 
-## Introduction/Background
+### Introduction/Background
 
-## Problem Definition
+### Problem Definition
 
 
-## Methods
+### Methods
 
-## Potential Results and Discussion
+### Potential Results and Discussion
 
-## Datasets
+### Datasets
 
-## References
+### References
