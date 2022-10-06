@@ -1,3 +1,6 @@
+# CS 7641 Project: Autotrader
+Group 16
+
 ## Proposal
 
 
