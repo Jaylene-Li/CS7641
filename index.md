@@ -46,8 +46,8 @@ We will be collecting stock data from Yahoo Finance [3] and Alpha Vantage [4]. O
 
 ## References
 
-<span style="font-size:0.8em;">[1]Khaidem, L., Saha, S., & Dey, S. R. (2016, April). Predicting the direction of stock market prices using random forest.</span>\
-<span style="font-size:0.8em;">[2]Zolotareva, E. (1970, January). Aiding long-term investment decisions with XGBoost machine learning model.</span>\
+<span style="font-size:0.8em;">[1] Khaidem, L., Saha, S., & Dey, S. R. (2016, April). Predicting the direction of stock market prices using random forest.</span>\
+<span style="font-size:0.8em;">[2] Zolotareva, E. (1970, January). Aiding long-term investment decisions with XGBoost machine learning model.</span>\
 <span style="font-size:0.8em;">[3] Yahoo! Finance. Yahoo! https://finance.yahoo.com/, 2022.</span>\
 <span style="font-size:0.8em;">[4] Alpha Vantage. Alpha Vantage Inc. https://www.alphavantage.co/, 2022.</span>\
 <span style="font-size:0.8em;">[5] Obthong, M., Tantisantiwong, N., Jeamwatthanachai, W., & Wills, G. (2020). A survey on machine learning for stock price prediction: algorithms and techniques.</span>\
