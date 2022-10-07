@@ -14,7 +14,7 @@ Stock market investment requires an understanding of several metrics and indicat
 
 ## Problem Definition
 
-Existing machine learning models like Random Forest used to predict values of S&P500[5] and XGBoost used to predict Vangaurd (VTI) returns[6] aim to predict changes in stock prices to assist financial decisions. However, prediction models have proven to be limited in their own way. Even so, models can be constantly trained on an ever increasing volume of data. A finely tuned machine learning model is better suited to illuminate the predictive value of historical market activity on future trends.
+Existing machine learning models like Random Forest used to predict values of S&P500 [1] and XGBoost used to predict Vangaurd (VTI) returns [2] aim to predict changes in stock prices to assist financial decisions. However, prediction models have proven to be limited in their own way. Even so, models can be constantly trained on an ever increasing volume of data. A finely tuned machine learning model is better suited to illuminate the predictive value of historical market activity on future trends.
 
 Given a set of numeric data about the past stock performance and text data from news outlets, by using Random forest, XGBoost decision tree models and clustering models, we aim to better fit, tune datasets and to outperform traditional prediction models.
 
@@ -42,15 +42,15 @@ We will also evaluate our clustering models using the Silhouette Coefficient and
 
 ## Datasets
 
-We will be collecting stock data from Yahoo Finance[3] and Alpha Vantage[4]. Other than the numerical data, we will collect the text data from the New York Times API for our NLP implementation.
+We will be collecting stock data from Yahoo Finance [3] and Alpha Vantage [4]. Other than the numerical data, we will collect the text data from the New York Times API for our NLP implementation.
 
 ## References
 
-<span style="font-size:0.8em;">[1] Obthong, M., Tantisantiwong, N., Jeamwatthanachai, W., & Wills, G. (2020). A survey on machine learning for stock price prediction: algorithms and techniques.</span> \
-<span style="font-size:0.8em;">
-[2] Ding, X., Zhang, Y., Liu, T., & Duan, J. (2015, June). Deep learning for event-driven stock prediction. In Twenty-fourth international joint conference on artificial intelligence.</span> \
+<span style="font-size:0.8em;">[1]Khaidem, L., Saha, S., & Dey, S. R. (2016, April). Predicting the direction of stock market prices using random forest.</span>\
+<span style="font-size:0.8em;">[2]Zolotareva, E. (1970, January). Aiding long-term investment decisions with XGBoost machine learning model.</span>\
 <span style="font-size:0.8em;">[3] Yahoo! Finance. Yahoo! https://finance.yahoo.com/, 2022.</span>\
 <span style="font-size:0.8em;">[4] Alpha Vantage. Alpha Vantage Inc. https://www.alphavantage.co/, 2022.</span>\
-<span style="font-size:0.8em;">[5]Khaidem, L., Saha, S., & Dey, S. R. (2016, April). Predicting the direction of stock market prices using random forest.</span>\
-<span style="font-size:0.8em;">[6]Zolotareva, E. (1970, January). Aiding long-term investment decisions with XGBoost machine learning model.</span>
+<span style="font-size:0.8em;">[5] Obthong, M., Tantisantiwong, N., Jeamwatthanachai, W., & Wills, G. (2020). A survey on machine learning for stock price prediction: algorithms and techniques.</span>\
+<span style="font-size:0.8em;">
+[6] Ding, X., Zhang, Y., Liu, T., & Duan, J. (2015, June). Deep learning for event-driven stock prediction. In Twenty-fourth international joint conference on artificial intelligence.</span>\
 
