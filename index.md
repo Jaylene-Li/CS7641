@@ -44,6 +44,20 @@ We will also evaluate our clustering models using the Silhouette Coefficient and
 
 We will be collecting stock data from Yahoo Finance [3] and Alpha Vantage [4]. Other than the numerical data, we will collect the text data from the New York Times API for our NLP implementation.
 
+## Contribution Table
+
+| Group Member      | Tasks Done        |
+|:------------------|:------------------|
+| Dan Nguyen        | Parts in Method/Results Section, overall edit/proofread proposal |
+| Chidozie Ugwumadu | Introduction and Problem section, references for Random Forest and XGBoost    |
+| Yilong Tang       | Finding datasets, results section, GitHub script    |
+| Alan Yu           | Unsupervised learning models, results section |
+| Jiaying Li        | Literature review of possible machine learning models, GitHub script, method section |
+
+## Grantt Chart
+
+
+
 ## References
 
 <span style="font-size:0.8em;">[1] Khaidem, L., Saha, S., & Dey, S. R. (2016, April). Predicting the direction of stock market prices using random forest.</span>\
