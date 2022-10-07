@@ -55,6 +55,8 @@ We will be collecting stock data from Yahoo Finance [3] and Alpha Vantage [4]. O
 | Jiaying Li        | Literature review of possible machine learning models, GitHub script, method section |
 
 ## Gantt Chart
+<a href="https://github.com/JiayingLi0803/CS7641/blob/main/image/GanttChart_Group16.pdf" download="Download GanttChart Here">Download</a>
+
 ![GanttChart](/image/GanttChart.jpg)
 
 ## References
