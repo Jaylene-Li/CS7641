@@ -52,5 +52,5 @@ We will be collecting stock data from Yahoo Finance [3] and Alpha Vantage [4]. O
 <span style="font-size:0.8em;">[4] Alpha Vantage. Alpha Vantage Inc. https://www.alphavantage.co/, 2022.</span>\
 <span style="font-size:0.8em;">[5] Obthong, M., Tantisantiwong, N., Jeamwatthanachai, W., & Wills, G. (2020). A survey on machine learning for stock price prediction: algorithms and techniques.</span>\
 <span style="font-size:0.8em;">
-[6] Ding, X., Zhang, Y., Liu, T., & Duan, J. (2015, June). Deep learning for event-driven stock prediction. In Twenty-fourth international joint conference on artificial intelligence.</span>\
+[6] Ding, X., Zhang, Y., Liu, T., & Duan, J. (2015, June). Deep learning for event-driven stock prediction. In Twenty-fourth international joint conference on artificial intelligence.</span>
 
