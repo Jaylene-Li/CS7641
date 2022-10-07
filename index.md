@@ -5,15 +5,15 @@ layout: default
 This is Group 16 project for 2022 Fall, CS 7641.
 
 
-## Proposal
+# Proposal
 
 
-### Introduction/Background
+## Introduction/Background
 
-### Problem Definition
+## Problem Definition
 
 
-### Methods
+## Methods
 
 We may start our training from the simplest linear model (Ridge regression). However, the dataset of stocks contains a lot of noise and the prices of the stocks are not linearly distributed. Therefore, we may need a more complex model to train the dataset.
 The most intuitive method is using a decision tree. However, the stock dataset is so complex that we need to avoid overfitting. There are two kinds of advanced decision tree model:
@@ -30,9 +30,23 @@ Another method that we can experiment on predicting stock prices is by using a d
 For our unsupervised learning model, we will try clustering stocks using both GMM and K-means clustering. For each stock, we will calculate the percent change in price for each day. This gives a more meaningful comparison compared to the absolute change in price. Each day will correspond to a unique variable, so a single distance computation will always be done for the same corresponding day. 
 
 
-### Potential Results and Discussion
+## Potential Results and Discussion
 
-### Datasets
+## Datasets
 
-### References
+We will be collecting stock data from Yahoo Finance[3] and Alpha Vantage[4]. Other than the numerical data, we will collect the text data from the New York Times API for our NLP implementation.
+
+## References
+
+[1] Obthong, M., Tantisantiwong, N., Jeamwatthanachai, W., & Wills, G. (2020). A survey on machine learning for stock price prediction: algorithms and techniques.
+
+[2] Ding, X., Zhang, Y., Liu, T., & Duan, J. (2015, June). Deep learning for event-driven stock prediction. In Twenty-fourth international joint conference on artificial intelligence.
+
+[3] Yahoo! Finance. Yahoo! https://finance.yahoo.com/, 2022.
+
+[4] Alpha Vantage. Alpha Vantage Inc. https://www.alphavantage.co/, 2022.
+
+[5]Khaidem, L., Saha, S., & Dey, S. R. (2016, April). Predicting the direction of stock market prices using random forest. 
+
+[6]Zolotareva, E. (1970, January). Aiding long-term investment decisions with XGBoost machine learning model. 
 
