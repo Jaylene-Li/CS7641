@@ -54,9 +54,8 @@ We will be collecting stock data from Yahoo Finance [3] and Alpha Vantage [4]. O
 | Alan Yu           | Unsupervised learning models, results section |
 | Jiaying Li        | Literature review of possible machine learning models, GitHub script, method section |
 
-## Grantt Chart
-
-
+## Gantt Chart
+![GanttChart](/image/GanttChart.jpg)
 
 ## References
 
