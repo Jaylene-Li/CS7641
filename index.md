@@ -121,6 +121,7 @@ The figure above shows the result with ten clusters in different colors.
 The plots below show 5 random stocks in our ten clusters respectively. By looking at the price fluctuations of the stocks in the image, we can clearly see that there is a certain similarity in the cyclical movements of stocks in each cluster. 
 
 ![individualstocks](image/individualstocks.png)
+![individualstocks1](image/individualstocks1.png)
 
 ### Evaluation
 We used Silhouette score as evaluation criterion for our KMeans algorithm. 
