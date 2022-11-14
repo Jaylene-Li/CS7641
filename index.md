@@ -83,17 +83,8 @@ Given a set of numeric data about the past stock performance and text data from 
 
 ## Data 
 
-Since stock datasets contain a lot of noise and are not linearly distributed, data processing is needed. Hence, we plan to utilize two decision tree models:
 
-*   Random Forest
-*   XGBoost
-
-We choose Random Forest as one of our models because it can fit almost any dataset, linear or nonlinear. Random Forest also behaves well when there are missing data, but besides that we also recognize that Random Forest models can overfit when the datasets have too much noise
-
-XGBoost is another decision tree model that we consider, because it is less likely to overfit if we add regularization criteria and it can provide a more flexible and accurate model. There are some disadvantages with XGBoost are its high time complexity, space complexity and its difficult parameters tuning.
-
-For our unsupervised learning model, we plan to cluster different types of stocks using both GMM and K-means clustering. For each stock, we will calculate the percent change in price for each day. This gives a more meaningful comparison compared to the absolute change in price. Each day will correspond to a unique variable, so a single distance computation will always be done for the same corresponding day. 
-
+![AmazonPlot](/image/amzn.jpg)
 
 
 ## Potential Results and Discussion
