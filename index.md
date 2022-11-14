@@ -84,7 +84,7 @@ Given a set of numeric data about the past stock performance and text data from 
 ## Data 
 
 
-![AmazonPlot](/image/amzn.png)
+![AmazonPlot](image/amzn.png)
 
 
 ## Potential Results and Discussion
