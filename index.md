@@ -86,38 +86,59 @@ Given a set of numeric data about the past stock performance and text data from 
 
 ![AmazonPlot](image/amzn.png)
 
+In our project, we used the historical stock data for all current S&P 500 companies. The data collection process is different from what we have proposed. Instead of extracting the stocks data from Yahoo finance, we have downloaded the 5 years records of S&P 500 companies stock data from kaggle.
+ 
+We used “price change” to measure the movement of the stock price. The figure above shows an example of the plot for AMZN stock, with moving average applied.
 
-## Potential Results and Discussion
+## Methods (Unsupervised Model: KMeans)
+Up till now, we normalized our dataset to format it to a standardized version and used Principal Component Analysis to reduce the amount of features in our data set, into 2 components. After preprocessing our dataset, we used unsupervised learning model KMeans to cluster different types of stocks. For each stock, we will calculate the percent change in price for each day. This gives a more meaningful comparison compared to the absolute change in daily price. Each day will correspond to a unique variable, so a single distance computation will always be done for the same corresponding day.
 
-We plan to use 2 advanced decision tree models (Random Forest and XGBoost) to avoid overfitting and to better tune our parameters. Potentially, we would apply this model with a single S&P 500 index as our starting point, as we get better simulation and prediction we can move forward with other stock indexes and funds. 
+## Results and Discussion
+### Data Cleaning and Preprocessing
+The dataset contains 5 years of stock data from 505 companies. The start date is at 2013-02-08 and the end date is at 2018-02-07. We excluded the stocks that had a different start date or missing dates. The dataset has 7 features for each stock, the date, open price, highest price of the day, lowest price of the day, close price, and volume (number of shares traded). For classifying and predicting stocks, we aimed to find the difference between the close price and the open price for each stock for everyday value. 
+ 
+After checking the data, we found that there is no empty value. Therefore, we used normalization and PCA for our data preprocessing.
+![NormalizationPlot](image/PCAImprovement.png)
+Normalization of our dataset is also one important factor. If we don’t normalize all stocks data, the classification model will cluster based on price of the stock instead of the movement of stock. As you can see the plot of two stocks “AMZN” and “PCAR”. After normalization, the movements are more even and are much less noisy.
+The plot above shows an example of the normalization for the data. 
+ 
+### Principal Component Analysis
+In order to reduce the number of features and to find out the most correlated features to the price, we applied PCA to the normalized data. We selected the top 2 features and checked with our algorithm. We compared the model with and without data after PCA by using silhouette score, and found that PCA significantly improved the model performance.
 
-We will also evaluate our clustering models using the Silhouette Coefficient and the Davies-Bouldin Index. We expect our clusters to group stocks that move similarly. This can be useful for traders who want to diversify their portfolio or who want to focus on specific sectors. It can also be used as a starting point to better understand the stock market.
+## KMeans Implementation
+### Choose K
+We used Elbow’s method to choose the K value. The figure is shown as below:
 
-## Datasets
+![ElbowPlot](image/Elbowmethod.png)
+Therefore, according to the figure, we chose K=10 in our KMeans implementation.
 
-We will be collecting stock data from Yahoo Finance [3] and Alpha Vantage [4]. Other than the numerical data, we will collect the text data from the New York Times API for our NLP implementation.
+### Clustering Results
+![Clustering](image/clustering.png)
+The figure above shows the result with ten clusters in different colors.
+The plots below show 5 random stocks in our ten clusters respectively. By looking at the price fluctuations of the stocks in the image, we can clearly see that there is a certain similarity in the cyclical movements of stocks in each cluster. 
+
+![individualstocks](image/individualstocks.png)
+
+### Evaluation
+We used Silhouette score as evaluation criterion for our KMeans algorithm. 
+
+|:------------------| Without PCA      | With PCA           |
+|Silhouette Score   |0.05867           |0.39538             |
+
+Without PCA, we got a low Silhouette score for our clustering, which indicates that the object is poorly matched to its own cluster. However, we find that the Silhouette score significantly increases with PCA during our preprocessing, which means feature selection is meaningful for stock prices. 
 
 ## Contribution Table
 
 | Group Member      | Tasks Done        |
 |:------------------|:------------------|
-| Dan Nguyen        | Parts in Method/Results Section, overall edit/proofread proposal |
-| Chidozie Ugwumadu | Introduction and Problem section, references for Random Forest and XGBoost    |
-| Yilong Tang       | Finding datasets, results section, GitHub script    |
-| Alan Yu           | Unsupervised learning models, results section |
-| Jiaying Li        | Literature review of possible machine learning models, GitHub script, method section |
+| Dan Nguyen        |Report Writing, GitHub Page |
+| Yilong Tang       |Data cleaning and preprocessing |
+| Alan Yu           |KMeans implementation |
+| Jiaying Li        |GitHub script, Report Writing |
 
-## Gantt Chart
-![GanttChart](/image/GanttChart.jpg)
 
 ## References
 
 <span style="font-size:0.8em;">[1] Khaidem, L., Saha, S., & Dey, S. R. (2016, April). Predicting the direction of stock market prices using random forest.</span>\
 <span style="font-size:0.8em;">[2] Zolotareva, E. (1970, January). Aiding long-term investment decisions with XGBoost machine learning model.</span>\
-<span style="font-size:0.8em;">[3] Yahoo! Finance. Yahoo! https://finance.yahoo.com/, 2022.</span>\
-<span style="font-size:0.8em;">[4] Alpha Vantage. Alpha Vantage Inc. https://www.alphavantage.co/, 2022.</span>\
-<span style="font-size:0.8em;">[5] Obthong, M., Tantisantiwong, N., Jeamwatthanachai, W., & Wills, G. (2020). A survey on machine learning for stock price prediction: algorithms and techniques.</span>\
-<span style="font-size:0.8em;">
-[6] Ding, X., Zhang, Y., Liu, T., & Duan, J. (2015, June). Deep learning for event-driven stock prediction. In Twenty-fourth international joint conference on artificial intelligence.</span>
-
 
