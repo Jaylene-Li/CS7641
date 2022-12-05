@@ -2,9 +2,9 @@
 layout: default
 ---
 
-This is Group 16 project midterm report for 2022 Fall, CS 7641.
+This is Group 16 project final report for 2022 Fall, CS 7641.
 
-# Midterm Report
+# Final Report
 
 
 ## Introduction/Background
