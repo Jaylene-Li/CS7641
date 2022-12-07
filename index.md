@@ -26,8 +26,15 @@ In our project, we used the historical stock data for all current S&P 500 compan
  
 We used “price change” to measure the movement of the stock price. The figure above shows an example of the plot for AMZN stock, with moving average applied.
 
-## Methods (Unsupervised Model: KMeans)
-Up till now, we normalized our dataset to format it to a standardized version and used Principal Component Analysis to reduce the amount of features in our data set, into 2 components. After preprocessing our dataset, we used unsupervised learning model KMeans to cluster different types of stocks. For each stock, we will calculate the percent change in price for each day. This gives a more meaningful comparison compared to the absolute change in daily price. Each day will correspond to a unique variable, so a single distance computation will always be done for the same corresponding day.
+## Methods
+### Unsupervised Model: KMeans
+We normalized our dataset to format it to a standardized version and used Principal Component Analysis to reduce the amount of features in our data set, into 2 components. After preprocessing our dataset, we used unsupervised learning model KMeans to cluster different types of stocks. For each stock, we will calculate the percent change in price for each day. This gives a more meaningful comparison compared to the absolute change in daily price. Each day will correspond to a unique variable, so a single distance computation will always be done for the same corresponding day.
+
+### Supervised Model: LSTM
+Suppose that the opening and ending price of a stock will depend on the prices in the previous days, then the Long Short Term Memory (LSTM) Model can be used in this situation. LSTM is a special Recurrent Neural Network (RNN), mainly used to solve the problem of vanishing gradient and explosion gradient during training models with long sequences. LSTM can perform better in longer sequences than ordinary RNNs.
+
+In our model, we focus on one of the stocks and calculate its absolute price change. We initialized a week as a time sequence in our model. By predicting the absolute price change in the future, we are able to predict the stock prices and its tendency.
+
 
 ## Results and Discussion
 ### Data Cleaning and Preprocessing
