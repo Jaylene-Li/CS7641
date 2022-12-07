@@ -77,6 +77,13 @@ We used Silhouette score as evaluation criterion for our KMeans algorithm.
 
 Without PCA, we got a low Silhouette score for our clustering, which indicates that the object is poorly matched to its own cluster. However, we find that the Silhouette score significantly increases with PCA during our preprocessing, which means feature selection is meaningful for stock prices. 
 
+## LSTM Implementation
+There are three parameters we need to tune: learning rate, epochs and day shift.
+### Data Splitting
+We split the dataset into a training set, validation set and testing set. As shown in the figure below, there are 80% training set, 10% validation set and 10% testing set.
+![dataSplitting](dataSplitting.png)
+
+
 ## Contribution Table
 
 | Group Member      | Tasks Done        |
