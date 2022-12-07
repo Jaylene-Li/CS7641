@@ -89,7 +89,7 @@ Based on the mean absolute error and model loss, we are able to select the epoch
 
 ![meanAbsoluteError](image/meanAbsoluteError.png)
 
-![modelLoss](modelLoss.png)
+![modelLoss](image/modelLoss.png)
 
 ### Choose Learning Rate and Day Shift
 A table of learning rate and day shift with different values are shown as the table below:
