@@ -132,14 +132,25 @@ A table of learning rate and day shift with different values are shown as the ta
 |    0.01       |      6      |16.067269058858933|
 |    0.01       |      7      |15.643823622417152|
 
+From the table, we can find that day shift = 1 will always lead to minimum RMSE value, which means that the price of stock will be more dependent on the previous day. Overall, we choose learning rate = 0.0005, day shift = 1, and epoch = 50 as our parameters. 
+ 
+### Evaluation
+
+![PredictingOnTesting](image/PredictingOnTesting.png)
+
+![PredictingOnTraining](image/PredictingOnTraining.png)
+
+The plots above show an example for stock price tendency prediction on the training set and testing set respectively. The RMSE on the testing set is 4.711.
+
+
 ## Contribution Table
 
-| Group Member      | Tasks Done        |
-|:------------------|:------------------|
-| Dan Nguyen        |Report Writing, GitHub Page |
-| Yilong Tang       |Data cleaning and preprocessing |
-| Alan Yu           |KMeans implementation |
-| Jiaying Li        |GitHub script, Report Writing |
+|    Group Member   |                          Tasks Done                              |
+|:------------------|:-----------------------------------------------------------------|
+| Dan Nguyen        |Report Writing, GitHub Page, Presentation                         |
+| Yilong Tang       |Data cleaning and preprocessing, LSTM Implementation, presentation|
+| Alan Yu           |KMeans implementation, LSTM parameter tuning, presentation        |
+| Jiaying Li        |GitHub script, report writing, presentation                       |
 
 
 ## References
